@@ -1,0 +1,278 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700,400|Open+Sans:400,300);
+
+
+
+/* FONTS
+-------------------------------------------------- */
+
+/* NAVBAR */
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue_regular.eot');
+    src: url('../fonts/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular.woff') format('woff'),
+         url('../fonts/bebasneue_regular.ttf') format('truetype'),
+         url('../fonts/bebasneue_regular.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* BODY */
+@font-face {
+    font-family: 'simplificasimplifica';
+    src: url('../fonts/simplifica_typeface.eot');
+    src: url('../fonts/simplifica_typeface.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/simplifica_typeface.woff') format('woff'),
+         url('../fonts/simplifica_typeface.ttf') format('truetype'),
+         url('../fonts/simplifica_typeface.svg#simplifica_typeface') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* HEADERS */
+@font-face {
+    font-family: 'norwester';
+    src: url('../fonts/norwester.eot');
+    src: url('../fonts/norwester.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/norwester.woff') format('woff'),
+         url('../fonts/norwester.ttf') format('truetype'),
+         url('../fonts/norwester.svg#norwseter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gemina_2_condensedcondensed';
+    src: url('../fonts/gemina2cond-webfont.eot');
+    src: url('../fonts/gemina2cond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gemina2cond-webfont.woff') format('woff'),
+         url('../fonts/gemina2cond-webfont.ttf') format('truetype'),
+         url('../fonts/gemina2cond-webfont.svg#gemina_2_condensedcondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@body: 'Open Sans', sans-serif;
+
+@header: 'Oswald', sans-serif;
+
+@header2: 'gemina_2_condensedcondensed';
+
+
+/* GLOBAL SETTINGS
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: @body;
+
+  @media(max-width:767px){
+    margin-bottom: 70px;
+  }
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  // height: 60px;
+  background: rgb(51, 51, 51);
+  font-family: @header;
+  p { font-size: 18px; }
+  li { display: inline-block; font-size: 18px; letter-spacing: 1px;}
+  .fa { color: #999; margin: 20px 0px; }
+  .icn { color: #999; margin: 20px 0px;}
+
+  a li{
+    &:hover { color: #FFF; }
+  }
+
+  @media(max-width: 992px) {
+    p { text-align: center !important;}
+    ul { text-align: center !important;}
+
+  }
+}
+
+#footer .first {
+  @media(max-width:767px){
+    padding-top: 10px;
+  }
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+  @media(max-width:767px){
+    margin: 5px 0px;
+  }
+}
+li .text-muted {
+  margin: 20px 0;
+  color: #999;
+}
+
+.social li {
+  padding-top: 20px;
+    
+    @media(max-width:767px){
+    padding-top: 5px;
+  }
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+h1,h2,h3,h4 { font-family: @header; text-transform: uppercase;}
+
+
+section { padding-top: 60px; padding-bottom: 80px;}
+
+ul { list-style-type: none;}
+
+a { 
+  color: #DEA653; 
+  text-decoration: none;
+  
+  &:hover { color: #DEA653; text-decoration: none;}
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.affix { top: 90px;}
+
+/* NAVBAR SETTINGS
+-------------------------------------------------- */
+.navbar-default {
+    font-family: @header;
+    text-transform: uppercase;
+    @media(min-width:767px) {
+        background: #333333;
+        border-color: #DEA653;
+        height: 65px;
+        font-size: 22px;
+        @media (min-width:767px) and (max-width:992px){
+          font-size: 18px;
+        }
+
+        .navbar-nav {
+            .active a {
+                color: #FFF;
+                background-color: #DEA653;
+                &:hover { color: #DEA653; background-color: #333333;}
+            }
+
+            li a {
+                padding-top: 25px;
+                padding-bottom: 20px;
+                color: #FFF;
+
+                &:hover{ color: #DEA653;}
+            }
+        }
+
+        .navbar-brand {
+          padding-top: 25px;
+          font-size: 24px;
+          color: #FFF;
+
+          @media(min-width:767px) and (max-width:992px) {
+            font-size: 20px;
+          }
+        }
+
+        .container { padding-left: 0px; padding-right: 0px;}
+    }
+    @media(max-width:767px){
+        background:#333333;
+        border-color: #DEA653;
+        font-size: 23px;
+        color: #FFF;
+        text-align: center;
+
+        .navbar-nav {
+          li a{ 
+              color: #FFF;
+              &:hover { color: #DEA653;}
+            }
+        }
+
+        .navbar-toggle:focus {
+          background-color: #DEA653;
+          border-color: #DEA653;
+        }
+
+        .navbar-brand {
+          font-size: 28px;
+          margin-top:2px;
+          color: #FFF;
+        }
+    }
+}
+
+/* PAGE SETTINGS
+-------------------------------------------------- */
+
+#home {
+  background: url('../img/code_bg.png')center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  position: relative;
+
+  h1{
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    color: #fff;
+  }
+}
+
+#athlete_banner {
+  background: url('../img/athlete.jpg')center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  position: relative;
+
+  h1{
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+

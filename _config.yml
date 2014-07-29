@@ -1,0 +1,4 @@
+name: "Anthro Docus"
+description: "Anthro Documentation"
+markdown: redcarpet
+pygments: true
