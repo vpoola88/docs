@@ -32,32 +32,201 @@ layout: default
 
         </div>  
         <div class="col-md-9">
-            {% include font.html %}
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec0" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                               Request A New Font
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            {% include font.html %}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec1" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Create A Newsletter
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include newsletter.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include newsletter.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec2" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                Gallery & Video Uploads
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include gallery.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include gallery.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec3" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                Google Site Verification
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include verification.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include verification.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec4" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                Google Analytics
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include analytics.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include analytics.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec5" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                Facebook Pixel
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include facebook.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include facebook.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec6" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                Meta Information
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include meta.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include meta.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec7" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                                Facebook Refresh
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include facebook-refresh.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include facebook-refresh.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec8" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                                Activate Shopify Pages
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include page.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include page.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec9" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                Adding Disqus
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include disqus.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include disqus.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec10" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                                Twitter Verification
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include twitter.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include twitter.html %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec11" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+                                Site Domain Activation
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include launch.html %}
+                        </div>
+                    </div>
+                </div>
 
-            {% include launch.html %}
-
-            {% include mx.html %}
-
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="sec12" class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+                                Updating MX Records
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThirteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {% include mx.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> 
     </div>
 </div>
